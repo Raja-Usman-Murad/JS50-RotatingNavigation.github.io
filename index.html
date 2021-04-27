@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <title>Rotating navigation</title>
+</head>
+
+<body>
+    <div class="container" id="home">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>RAJA USMAN</h1>
+            <small>RAJA</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo modi repellat maxime laboriosam.
+                Velit ipsum veritatis perferendis corporis animi beatae minima saepe eos dolorem cum nobis doloremque
+                veniam maiores nulla quam incidunt minus aspernatur labore, ipsam cumque id tempora nihil! Quas harum,
+                hic, rem similique quis, ex optio natus soluta adipisci illo repudiandae laborum impedit ab? Non,
+                dolores. Veritatis, eveniet vero quae enim sunt cupiditate amet ut iusto recusandae, autem veniam alias
+                cum, incidunt vitae sequi ipsum. Perferendis maiores culpa unde, perspiciatis, totam debitis reiciendis
+                in libero nisi, assumenda earum tempora. Excepturi delectus dicta laboriosam magni at amet! Cupiditate,
+                voluptatum!</p>
+            <img src="1.jpg" alt="">
+            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestiae fugiat saepe
+                vel? Voluptas
+                ratione earum sapiente fugiat esse architecto similique dolorem optio, nobis eius nam libero placeat
+                temporibus molestiae consequatur praesentium. Architecto sint minima, veniam exercitationem, veritatis
+                minus a libero iste vitae, rem nostrum quasi voluptas qui impedit alias.</p>
+            <br><br><br>
+            <h1 id="about">About Me:</h1>
+            <h2>My name is Raja Usman and I am a Full Stack Web Developer</h2>
+            <img src="2.JPG" alt="">
+            <br><br><br><br>
+
+            <h1 id="contact">Contact Us</h1>
+            <form action="">
+                <label for="fname">FIRST NAME:</label><br>
+                <input type="text" name="fname" id="fname" autofocus required placeholder="YOUR NAME HERE"><br>
+                <label for="lname">LAST NAME:</label><br>
+                <input type="text" name="lname" id="lname"><br>
+
+                <span>ARE YOU:</span><br>
+                &nbsp;&nbsp;&nbsp;<input type="radio" name="gender" id="male">
+                &nbsp;&nbsp;&nbsp;<label for="male">MALE</label><br>
+                &nbsp;&nbsp;&nbsp;<input type="radio" name="gender" id="FEMALE">
+                &nbsp;&nbsp;&nbsp;<label for="FEMALE">FEMALE</label><br>
+                &nbsp;&nbsp;&nbsp;<input type="radio" name="gender" id="OTHER">
+                &nbsp;&nbsp;&nbsp;<label for="OTHER">OTHER</label><br>
+
+                <span>YOUR SKILLS:</span><br>
+                &nbsp;&nbsp;&nbsp;<input type="checkbox" name="" id="html">
+                &nbsp;&nbsp;&nbsp;<label for="html">HTML</label><br>
+                &nbsp;&nbsp;&nbsp;<input type="checkbox" name="" id="css">
+                &nbsp;&nbsp;&nbsp;<label for="css">CSS</label><br>
+                &nbsp;&nbsp;&nbsp;<input type="checkbox" name="" id="javascript">
+                &nbsp;&nbsp;&nbsp;<label for="javascript">JAVASCRIPT</label><br><br>
+
+                <label for="brow">CHOOSE YOUR DEGREE:</label><br>
+                <input list="browsers" name="browser" id="brow">
+                <datalist id="browsers">
+                    <option value="SOFTWARE ENGG"></option>
+                    <option value="ELECTRICAL ENGG"></option>
+                    <option value="MECHANICAL ENGG"></option>
+                    <option value="CIVIL ENGG"></option>
+                </datalist><br><br>
+
+
+                <fieldset style="width: 50%; border:5px solid white;">
+                    <legend>GMAIL ACCOUNT DETAIL</legend>
+                    <label for="ename">ENTER YOUR NAME:</label><br>
+                    <input type="text" name="ename" id="ename"><br>
+                    <label for="email">ENTER YOUR EMAIL:</label><br>
+                    <input type="email" name="email" id="email"><br>
+                </fieldset><br>
+
+
+
+                <textarea name="message" id="msg" cols="36" rows="8" placeholder="YOUR MESSAGE HERE:"></textarea><br>
+
+
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </form>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href="#home" class="topp">HOME</a></li>
+            <li><i class="fas fa-user-alt"></i><a href="#about" class="topp">About</a></li>
+            <li><i class="fas fa-envelope"></i><a href="#contact" class="topp">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
